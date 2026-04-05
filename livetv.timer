@@ -1,0 +1,10 @@
+[Unit]
+Description=Run LiveTV update every 5 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+Unit=livetv.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Run v2 cache update script
+
+[Service]
+User=root
+Type=oneshot
+ExecStart=/usr/bin/php /var/www/html/v2/update.php

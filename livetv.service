@@ -1,0 +1,11 @@
+[Unit]
+Description=LiveTV Auto Update Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/php /var/www/html/playlist/livetv_list.php
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run v2 cache update every 30 minutes
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=30min
+Unit=v2-update.service
+
+[Install]
+WantedBy=timers.target
